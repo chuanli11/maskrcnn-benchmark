@@ -4,6 +4,8 @@ Installation
 ```bash
 sudo pip3 install virtualenv
 
+sudo apt-get install python3-dev
+
 cd maskrcnn-benchmark
 virtualenv -p /usr/bin/python3.6 venv-lambda
 . venv-lambda/bin/activate
@@ -59,8 +61,8 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train_net.py --config-file ./configs/e2e_m
 
 | Batch Size  | Memory  |
 |---|---|
+| bs=1 |   |
 | bs=4 |   |
-| bs=8 |   |
 | bs=16 |   |
 | bs=32 |   |
 
@@ -68,10 +70,10 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train_net.py --config-file ./configs/e2e_m
 
 |   | 2060  | 2070  | 2080  |  1080 Ti | 2080 Ti | TitanRTX | Quadro RTX 6000 | V100 | Quadro RTX 8000 |
 |---|---|---|---|---|---|---|---|---|---|
-| bs=4  |   |   | 3.88  | 3.85  |   |   |   | 5.40  | 5.17  |
-| bs=8  |   |   |   |   |   |   |   |   |   |
-| bs=16  |   |   |   |   |   |   |   |   | 5.84  |
-| bs=32  |   |   |   |   |   |   |   |   | OOM  |
+| bs=1  |   |   | 3.88  | 3.85  |   |   |   | 5.36  | 5.17  |
+| bs=4  |   |   |   |   |   |   |   | 6.35 |   |
+| bs=16  |   |   |   |   |   |   |   | OOM  | 5.84  |
+| bs=32  |   |   |   |   |   |   |   | OOM  | OOM  |
 
 
 
