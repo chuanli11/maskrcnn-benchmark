@@ -68,7 +68,7 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train_net.py --config-file ./configs/e2e_m
 
 |   | 2060  | 2070  | 2080  |  1080 Ti | 2080 Ti | TitanRTX | Quadro RTX 6000 | V100 | Quadro RTX 8000 |
 |---|---|---|---|---|---|---|---|---|---|
-| bs=4  |   |   | 3.88  | 3.85  |   |   |   | 4.89  | 5.17  |
+| bs=4  |   |   | 3.88  | 3.85  |   |   |   | 5.40  | 5.17  |
 | bs=8  |   |   |   |   |   |   |   |   |   |
 | bs=16  |   |   |   |   |   |   |   |   | 5.84  |
 | bs=32  |   |   |   |   |   |   |   |   | OOM  |
