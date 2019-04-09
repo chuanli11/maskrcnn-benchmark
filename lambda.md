@@ -64,7 +64,7 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train_net.py --config-file ./configs/e2e_m
 | bs=1 | 6GB  |
 | bs=2 | 8GB  |
 | bs=4 | 24GB  |
-| bs=8 | 32GB  |
+| bs=8 | 24GB  |
 | bs=16 | 48GB  |
 | bs=32 | x  |
 
@@ -75,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train_net.py --config-file ./configs/e2e_m
 | bs=1  | 2.85 | 3.18  | 3.88  | 3.85  | 4.96 | 5.42  |  4.95 | 5.36  | 5.17  |
 | bs=2  | OOM  | 3.33  | 4.36  | 4.42  | 5.22 | 5.64  |  5.12 | 5.66  | 5.35  |
 | bs=4  | OOM  | OOM  | OOM  | OOM  | OOM  | 6.14  | 5.43  | 6.25 |  5.95 |
-| bs=8  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | 6.35  | 5.90  |
+| bs=8  | OOM  | OOM  | OOM  | OOM  | OOM  | 6.3  | 5.54  | 6.35  | 5.90  |
 | bs=16  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | 5.84  |
 | bs=32  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  | OOM  |
 
